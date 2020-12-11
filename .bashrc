@@ -10,7 +10,7 @@ source $PERSONAL_SETTINGS_DIR/.bashrc_default
 #  /_/    /_/ |_|/_/    /_//_/  /___/
 
 export APPLICATIONS_PATH="$HOME/applications"
-export PATH="$APPLICATIONS_PATH/WebStorm/bin:$PATH"
+export PATH="/usr/local/go/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 
 
 # Map Interrupt to Ctrl-L.
