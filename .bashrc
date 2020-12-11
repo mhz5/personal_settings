@@ -36,7 +36,13 @@ edit_config_and_push_to_github() {
   cd $PERSONAL_SETTINGS_DIR;
   $edit_config_fn;
   echo "Pushing updated config to github..."
-  git add .; git commit --quiet -m "update" > /dev/null; git push --quiet;
+  git add .;
+  git commit --quiet -m "update" > /dev/null;
+  if [[ $? == 1 ]]; then
+    echo "No changes were made"
+    exit
+  fi
+  git push --quiet;
   if [[ $? != 0 ]]; then
     echo "Failed"
   else
