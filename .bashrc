@@ -11,9 +11,17 @@ source $PERSONAL_SETTINGS_DIR/.bashrc_default
 
 export APPLICATIONS_PATH="$HOME/applications"
 export GOPATH="$HOME/go"
+# Food Delivery App paths
 export FDA_ROOT="$GOPATH/src/fda"
 export FDA_WEB_ROOT="$HOME/WebstormProjects/fda-web"
 export FDA_DRIVER_ROOT="$HOME/WebstormProjects/fda-driver"
+# Android
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 export PATH="/usr/local/go/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 
 
@@ -28,7 +36,7 @@ alias aoei="cd $FDA_WEB_ROOT"
 alias oei="cd $FDA_DRIVER_ROOT"
 
 # Map Interrupt to Ctrl-L.
-stty intr ^l
+stty intr ^L
 # Set the Command Prompt Prefix.
 export PS1='\[`[ $? = 0 ] && X=2 || X=1; tput setaf $X`\]\h\[`tput sgr0`\]:$PWD\n亹 '
 
