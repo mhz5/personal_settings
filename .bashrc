@@ -29,13 +29,19 @@ alias copy="xclip -selection clipboard"
 alias hibernate="systemctl hibernate"
 # Edit .bashrc and .vimrc.
 bashrc() {
-  vim $PERSONAL_SETTINGS_DIR/.bashrc;
-  source $PERSONAL_SETTINGS_DIR/.bashrc;
+  cur_dir=$(pwd)
+  cd $PERSONAL_SETTINGS_DIR;
+  vim .bashrc;
+  source .bashrc;
   git add .; git commit -m "update"; git push;
+  cd $cur_dir
 }
 vimrc() {
-  vim $PERSONAL_SETTINGS_DIR/.vimrc;
+  cur_dir=$(pwd)
+  cd $PERSONAL_SETTINGS_DIR;
+  vim .vimrc;
   git add .; git commit -m "update"; git push;
+  cd $cur_dir
 }
 
 
