@@ -108,3 +108,4 @@ execute "set <M-v>=\ev"
 :imap <S-Down> <Esc>v<Down>
 :imap <S-Left> <Esc>v<Left>
 :imap <S-Right> <Esc>v<Right>
+
