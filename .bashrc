@@ -9,8 +9,8 @@ source $PERSONAL_SETTINGS_DIR/.bashrc_default
 #   / ___/ / __ | / /    / _  /  (_-<
 #  /_/    /_/ |_|/_/    /_//_/  /___/
 
-export GOPATH="/home/muke/go"
-export PATH="/home/muke/Applications/GoLand/bin:/home/muke/Applications/WebStorm/bin:/snap/bin:$PATH"
+export APPLICATIONS_PATH="$HOME/applications"
+export PATH="$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 
 
 # Map Interrupt to Ctrl-L.
