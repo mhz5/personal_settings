@@ -16,7 +16,7 @@ export PATH="$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 # Map Interrupt to Ctrl-L.
 stty intr ^l
 # Set the Command Prompt Prefix.
-export PS1='\[`[ $? = 0 ] && X=2 || X=1; tput setaf $X`\]\h\[`tput sgr0`\]:$PWD\n 亹'
+export PS1='\[`[ $? = 0 ] && X=2 || X=1; tput setaf $X`\]\h\[`tput sgr0`\]:$PWD\n 亹 '
 
 
 #    __  __  __    _    __   _   __        
