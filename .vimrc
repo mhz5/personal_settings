@@ -1,4 +1,4 @@
-" To keep cursor in middle while scrolling
+" To keep cursor in middle while scrolling.
 "set scrolloff=9999
 
 " Set the window title to show name of open file.
@@ -46,13 +46,13 @@ noremap B M
 noremap iv iw
 noremap av aw
 
-" Remap movement commands
+" Remap movement commands.
 :noremap h h
 :noremap n l
 :noremap c k
 :noremap t j
 
-" Jump carat instead of jumping screen
+" Jump carat instead of jumping screen.
 " character is Alt+c
 " execute "set <M-c>=\ec"
 " :nnoremap <M-c> 10k
@@ -95,7 +95,7 @@ execute "set <M-v>=\ev"
 " :nnoremap <C-o> <C-o>
 " :nnoremap <C-e> <Tab>
 
-" Remap movement in visual mode
+" Remap movement in visual mode.
 :nmap <S-Up> v<Up>
 :nmap <S-Down> v<Down>
 :nmap <S-Left> v<Left>

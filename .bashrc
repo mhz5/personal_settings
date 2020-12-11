@@ -1,4 +1,5 @@
 export PERSONAL_SETTINGS_DIR="$HOME/personal_settings"
+# Source the default .bashrc provided by pop os.
 source $PERSONAL_SETTINGS_DIR/.bashrc_default
 
 # To generate large ASCII headers: http://patorjk.com/software/taag/#p=display&h=0&v=0&c=bash&f=Small%20Slant
@@ -33,9 +34,11 @@ bashrc() {
   cd $PERSONAL_SETTINGS_DIR;
   vim .bashrc;
   source .bashrc;
+  pwd;
   git add .; git commit -m "update"; git push;
   cd $cur_dir
 }
+
 vimrc() {
   cur_dir=$(pwd)
   cd $PERSONAL_SETTINGS_DIR;
