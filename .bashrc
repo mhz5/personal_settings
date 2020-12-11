@@ -34,15 +34,16 @@ bashrc() {
   cd $PERSONAL_SETTINGS_DIR;
   vim .bashrc;
   source .bashrc;
-  git add .; git commit -m "update"; git push;
+  echo "Pushing .bashrc to github..."
+  git add .; git commit --quiet -m "update"; git push --quiet;
   cd $cur_dir
 }
-
 vimrc() {
   cur_dir=$(pwd)
   cd $PERSONAL_SETTINGS_DIR;
   vim .vimrc;
-  git add .; git commit -m "update"; git push;
+  echo "Pushing .vimrc to github..."
+  git add .; git commit --quiet -m "update"; git push --quiet;
   cd $cur_dir
 }
 
