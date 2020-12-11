@@ -12,9 +12,9 @@ export GOPATH="/home/muke/go"
 export PATH="/home/muke/Applications/GoLand/bin:/home/muke/Applications/WebStorm/bin:/snap/bin:$PATH"
 
 
-# Map Interrupt to Ctrl-L
+# Map Interrupt to Ctrl-L.
 stty intr ^l
-# Set the Command Prompt Prefix
+# Set the Command Prompt Prefix.
 export PS1="\W 亹"
 
 
@@ -26,9 +26,17 @@ export PS1="\W 亹"
                                                   
 # Std input to this command is copied to clipboard.
 alias copy="xclip -selection clipboard"
-# Edit .bashrc and .vimrc
-bashrc() { vim $PERSONAL_SETTINGS_DIR/.bashrc; source $PERSONAL_SETTINGS_DIR/.bashrc; }
-vimrc() { vim $PERSONAL_SETTINGS_DIR/.vimrc; }
+alias hibernate="systemctl hibernate"
+# Edit .bashrc and .vimrc.
+bashrc() {
+  vim $PERSONAL_SETTINGS_DIR/.bashrc;
+  source $PERSONAL_SETTINGS_DIR/.bashrc;
+  git add .; git commit -m "update"; git push;
+}
+vimrc() {
+  vim $PERSONAL_SETTINGS_DIR/.vimrc;
+  git add .; git commit -m "update"; git push;
+}
 
 
 #    _____   _   __ 
