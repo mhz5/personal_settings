@@ -29,11 +29,11 @@ export PS1="\W 亹"
 alias copy="xclip -selection clipboard"
 alias hibernate="systemctl hibernate"
 # Edit .bashrc and .vimrc.
-bashrc() {
+edit_config_and_push_to_github() {
+  edit_config_fn=$1
   cur_dir=$(pwd)
   cd $PERSONAL_SETTINGS_DIR;
-  vim .bashrc;
-  source .bashrc;
+  $edit_config_fn;
   echo "Pushing .bashrc to github..."
   git add .; git commit --quiet -m "update"; git push --quiet;
   if [[ $? != 0 ]]; then
@@ -44,18 +44,19 @@ bashrc() {
   cd $cur_dir
 }
 
-vimrc() {
-  cur_dir=$(pwd)
-  cd $PERSONAL_SETTINGS_DIR;
+_bashrc_edit_fn() {
+  vim .bashrc;
+  source .bashrc;
+}
+bashrc() {
+  edit_config_and_push_to_github _bashrc_edit_fn
+}
+
+_vimrc_edit_fn() {
   vim .vimrc;
-  echo "Pushing .vimrc to github..."
-  git add .; git commit --quiet -m "update"; git push --quiet;
-  if [[ $? != 0 ]]; then
-    echo "Failed"
-  else
-    echo "Success"
-  fi
-  cd $cur_dir
+}
+vimrc() {
+  edit_config_and_push_to_github _vimrc_edit_fn
 }
 
 
