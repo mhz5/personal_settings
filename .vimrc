@@ -66,7 +66,7 @@ noremap av aw
 :noremap <Down> 5j
 
 
-" Remap 
+" Remap.
 execute "set <M-m>=\em"
 execute "set <M-v>=\ev"
 :nnoremap <Home> ^
@@ -77,7 +77,7 @@ execute "set <M-v>=\ev"
 :vnoremap <M-v> $
 :vnoremap w <ESC>
 
-" Remap change
+" Remap change.
 :nnoremap b c
 
 
@@ -91,7 +91,7 @@ execute "set <M-v>=\ev"
 ":nnoremap dm db
 
 
-" Prev/Next Position
+" Prev/Next Position.
 " :nnoremap <C-o> <C-o>
 " :nnoremap <C-e> <Tab>
 
