@@ -34,7 +34,6 @@ bashrc() {
   cd $PERSONAL_SETTINGS_DIR;
   vim .bashrc;
   source .bashrc;
-  pwd;
   git add .; git commit -m "update"; git push;
   cd $cur_dir
 }
