@@ -28,6 +28,7 @@ export PS1="\W 亹"
 # Std input to this command is copied to clipboard.
 alias copy="xclip -selection clipboard"
 alias hibernate="systemctl hibernate"
+
 # Edit .bashrc and .vimrc.
 edit_config_and_push_to_github() {
   edit_config_fn=$1
@@ -43,17 +44,15 @@ edit_config_and_push_to_github() {
   fi
   cd $cur_dir
 }
-
 _bashrc_edit_fn() {
   vim .bashrc;
   source .bashrc;
 }
-bashrc() {
-  edit_config_and_push_to_github _bashrc_edit_fn
-}
-
 _vimrc_edit_fn() {
   vim .vimrc;
+}
+bashrc() {
+  edit_config_and_push_to_github _bashrc_edit_fn
 }
 vimrc() {
   edit_config_and_push_to_github _vimrc_edit_fn
