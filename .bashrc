@@ -10,8 +10,22 @@ source $PERSONAL_SETTINGS_DIR/.bashrc_default
 #  /_/    /_/ |_|/_/    /_//_/  /___/
 
 export APPLICATIONS_PATH="$HOME/applications"
+export GOPATH="$HOME/go"
+export FDA_ROOT="$GOPATH/src/fda"
+export FDA_WEB_ROOT="$HOME/WebstormProjects/fda-web"
+export FDA_DRIVER_ROOT="$HOME/WebstormProjects/fda-driver"
 export PATH="/usr/local/go/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 
+
+#     _  __               _                __    _            
+#    / |/ / ___ _ _  __  (_)  ___ _ ___ _ / /_  (_) ___   ___ 
+#   /    / / _ `/| |/ / / /  / _ `// _ `// __/ / / / _ \ / _ \
+#  /_/|_/  \_,_/ |___/ /_/   \_, / \_,_/ \__/ /_/  \___//_//_/
+#                           /___/                             
+
+alias snth="cd $FDA_ROOT"
+alias aoei="cd $FDA_WEB_ROOT"
+alias oei="cd $FDA_DRIVER_ROOT"
 
 # Map Interrupt to Ctrl-L.
 stty intr ^l
@@ -80,16 +94,6 @@ gcr() {
   git add .
   git commit -m $msg
 }
-
-
-#     _  __               _                __    _            
-#    / |/ / ___ _ _  __  (_)  ___ _ ___ _ / /_  (_) ___   ___ 
-#   /    / / _ `/| |/ / / /  / _ `// _ `// __/ / / / _ \ / _ \
-#  /_/|_/  \_,_/ |___/ /_/   \_, / \_,_/ \__/ /_/  \___//_//_/
-#                           /___/                             
-
-export FDA_WEB="$GOPATH/src/bboy-jam-assistant"
-alias aoei="cd /home/muke/go/src/bboy-jam-assistant"
 
 
 #    ____   __    __            
