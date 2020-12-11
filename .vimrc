@@ -17,8 +17,8 @@ set ttimeout ttimeoutlen=10
 noremap <ENTER> /
 
 " Set Line Numbers
-:set number
-:set relativenumber
+" :set number
+" :set relativenumber
 
 noremap = F
 noremap <Space> f
