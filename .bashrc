@@ -35,8 +35,8 @@ edit_config_and_push_to_github() {
   cur_dir=$(pwd)
   cd $PERSONAL_SETTINGS_DIR;
   $edit_config_fn;
-  echo "Pushing .bashrc to github..."
-  git add .; git commit --quiet -m "update"; git push --quiet;
+  echo "Pushing updated config to github..."
+  git add .; git commit --quiet -m "update" > /dev/null; git push --quiet;
   if [[ $? != 0 ]]; then
     echo "Failed"
   else
