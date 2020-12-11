@@ -40,13 +40,13 @@ edit_config_and_push_to_github() {
   git commit --quiet -m "update" > /dev/null;
   if [[ $? -eq 1 ]]; then
     echo "No changes were made"
-    exit
-  fi
-  git push --quiet;
-  if [[ $? -ne 0 ]]; then
-    echo "Failed"
   else
-    echo "Success"
+    git push --quiet;
+    if [[ $? -ne 0 ]]; then
+      echo "Failed"
+    else
+      echo "Success"
+    fi
   fi
   cd $cur_dir
 }
