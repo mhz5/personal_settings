@@ -26,6 +26,7 @@ export PS1='\[`[ $? = 0 ] && X=2 || X=1; tput setaf $X`\]\h\[`tput sgr0`\]:$PWD\
 #                                   /___/  
                                                   
 # Std input to this command is copied to clipboard.
+alias open="xdg-open"
 alias copy="xclip -selection clipboard"
 alias hibernate="systemctl hibernate"
 
