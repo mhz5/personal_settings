@@ -36,14 +36,25 @@ bashrc() {
   source .bashrc;
   echo "Pushing .bashrc to github..."
   git add .; git commit --quiet -m "update"; git push --quiet;
+  if [[ $? != 0 ]]; then
+    echo "Failed"
+  else
+    echo "Success"
+  fi
   cd $cur_dir
 }
+
 vimrc() {
   cur_dir=$(pwd)
   cd $PERSONAL_SETTINGS_DIR;
   vim .vimrc;
   echo "Pushing .vimrc to github..."
   git add .; git commit --quiet -m "update"; git push --quiet;
+  if [[ $? != 0 ]]; then
+    echo "Failed"
+  else
+    echo "Success"
+  fi
   cd $cur_dir
 }
 
