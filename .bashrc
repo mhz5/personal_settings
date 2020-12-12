@@ -11,6 +11,7 @@ source $PERSONAL_SETTINGS_DIR/.bashrc_default
 
 export APPLICATIONS_PATH="$HOME/applications"
 export GOPATH="$HOME/go"
+export PATH="$PATH:$APPLICATIONS_PATH/react-native-debugger"
 # Food Delivery App paths
 export FDA_ROOT="$GOPATH/src/fda"
 export FDA_WEB_ROOT="$HOME/WebstormProjects/fda-web"
