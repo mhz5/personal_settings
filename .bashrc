@@ -52,6 +52,7 @@ export PS1='\[`[ $? = 0 ] && X=2 || X=1; tput setaf $X`\]\h\[`tput sgr0`\]:$PWD\
 alias open="xdg-open"
 alias copy="xclip -selection clipboard"
 alias hibernate="systemctl hibernate"
+alias macos="docker start e4b097c98330"
 
 # Edit .bashrc and .vimrc.
 edit_config_and_push_to_github() {
