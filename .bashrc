@@ -41,7 +41,7 @@ stty intr ^L
 # Set the Command Prompt Prefix.
 export PS1='\[`[ $? = 0 ] && X=2 || X=1; tput setaf $X`\]\h\[`tput sgr0`\]:$PWD\n亹 '
 # Sets the title of the Terminal Window
-PROMPT_COMMAND='echo -ne "\033]0;Mukes Terminal\007"'
+PROMPT_COMMAND='echo -ne "\033]0;Terminal: ${PWD/$HOME/~}\007"'
 
 
 #    __  __  __    _    __   _   __        

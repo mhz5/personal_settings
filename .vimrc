@@ -2,7 +2,7 @@
 "set scrolloff=9999
 
 " Set the window title to show name of open file.
-set title
+" set title
 " Reset window title to old title after closing vim.
 set titleold=
 
