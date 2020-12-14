@@ -102,9 +102,8 @@ alias ht="git status"
 alias th="git log"
 alias c="cd .."
 gcr() {
-  msg=$1
   git add .
-  git commit -m $msg
+  git commit -m $1
 }
 
 
