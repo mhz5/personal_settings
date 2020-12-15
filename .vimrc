@@ -1,6 +1,10 @@
 " To keep cursor in middle while scrolling.
 "set scrolloff=9999
 
+" To remove annoying sound in JetBrains IDEs.
+set visualbell
+set noerrorbells
+
 " Set the window title to show name of open file.
 " set title
 " Reset window title to old title after closing vim.
