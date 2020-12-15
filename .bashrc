@@ -10,8 +10,13 @@ source $PERSONAL_SETTINGS_DIR/.bashrc_default
 #  /_/    /_/ |_|/_/    /_//_/  /___/
 
 export APPLICATIONS_PATH="$HOME/applications"
-export GOPATH="$HOME/go"
 export PATH="$PATH:$APPLICATIONS_PATH/react-native-debugger"
+
+# Go paths
+export GOPATH="$HOME/go"
+export GOROOT="/usr/local/go"
+export GOBIN="$GOPATH/bin"
+
 # Food Delivery App paths
 export FDA_ROOT="$GOPATH/src/fda"
 export FDA_WEB_ROOT="$HOME/WebstormProjects/fda-web"
@@ -23,7 +28,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-export PATH="/usr/local/go/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
+export PATH="$GOBIN:$GOROOT:$GOROOT/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 
 
 #     _  __               _                __    _            
