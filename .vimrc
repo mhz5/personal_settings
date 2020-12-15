@@ -2,7 +2,7 @@
 "set scrolloff=9999
 
 " To remove annoying sound in JetBrains IDEs.
-set visualbell
+" set visualbell
 set noerrorbells
 
 " Set the window title to show name of open file.

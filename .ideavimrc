@@ -1,0 +1,4 @@
+:set visualbell
+:set noerrorbells
+:source /home/muke/personal_settings/.vimrc
+
