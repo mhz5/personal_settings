@@ -112,6 +112,14 @@ gcr() {
 }
 
 
+#     ____            
+#    / __/  ___  _  __
+#   / _/   / _ \| |/ /
+#  /___/  /_//_/|___/ 
+
+export GOOGLE_APPLICATION_CREDENTIALS="$FDA_ROOT/service-account-keys-food-prod-860896cd4e98.json"
+
+
 #    ____   __    __            
 #   / __ \ / /_  / /  ___   ____
 #  / /_/ // __/ / _ \/ -_) / __/
