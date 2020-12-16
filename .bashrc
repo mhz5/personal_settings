@@ -37,9 +37,9 @@ export PATH="$GOBIN:$GOROOT:$GOROOT/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 #  /_/|_/  \_,_/ |___/ /_/   \_, / \_,_/ \__/ /_/  \___//_//_/
 #                           /___/                             
 
-alias snth="cd $FDA_ROOT"
-alias aoei="cd $FDA_WEB_ROOT"
-alias oei="cd $FDA_DRIVER_ROOT"
+alias snth="cd $FDA_ROOT; git status"
+alias aoei="cd $FDA_WEB_ROOT; git status"
+alias oei="cd $FDA_DRIVER_ROOT; git status"
 
 # Map Interrupt to Ctrl-L.
 stty intr ^L
