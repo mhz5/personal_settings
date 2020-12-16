@@ -108,7 +108,7 @@ alias th="git log"
 alias c="cd .."
 gcr() {
   git add .
-  git commit -m $1
+  git commit -m "$1"
 }
 
 
