@@ -58,8 +58,9 @@ PROMPT_COMMAND='echo -ne "\033]0;Terminal: ${PWD/$HOME/~}\007"'
 # Std input to this command is copied to clipboard.
 alias open="xdg-open"
 alias copy="xclip -selection clipboard"
-alias hibernate="systemctl hibernate"
-alias macos="docker start e4b097c98330"
+alias hibernate="sudo systemctl hibernate"
+alias ii="sudo aptitude install"
+
 
 # Edit .bashrc and .vimrc.
 edit_config_and_push_to_github() {
