@@ -19,8 +19,8 @@ export GOBIN="$GOPATH/bin"
 
 # Food Delivery App paths
 export FDA_ROOT="$GOPATH/src/fda"
-export FDA_WEB_ROOT="$HOME/WebstormProjects/fda-web"
-export FDA_DRIVER_ROOT="$HOME/WebstormProjects/fda-driver"
+export FDA_WEB_ROOT="$HOME/Projects/fda-web"
+export FDA_DRIVER_ROOT="$HOME/Projects/fda-driver"
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
