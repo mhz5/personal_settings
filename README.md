@@ -43,3 +43,39 @@ Terminal=false
 Type=Application
 Categories=Development;
 
+
+### SSH Keys
+#### For Multiple Github accounts
+https://gist.github.com/jexchan/2351996
+
+### Hibernate on PopOS
+Make sure Swap Partition is not encrypted.
+
+```
+DEVICE_NAME=/dev/<NAME_OF_DEVICE>
+sudo swapoff -a
+sudo cryptsetup remove /dev/mapper/cryptswap
+sudo vim /etc/crypttab
+# remove the line for $DEVICE_NAME
+sudo mkswap $DEVICE_NAME
+sudo swapon $DEVICE_NAME
+```
+
+Add the device to fstab file
+
+```
+sudo vim /etc/fstab
+# Replace /dev/mapper/cryptswap with UUID=<DEVICE_UUID>
+# It line should look like this:
+# UUID=9eef9d8e-2994–4d1d-bae7–91edbe353cb2 none swap defaults 0 0
+
+sudo kernelstub -a "resume=UUID=9eef9d8e-2994–4d1d-bae7–91edbe353cb2"
+echo "RESUME=UUID=9eef9d8e-2994–4d1d-bae7–91edbe353cb2" >> /etc/initramfs-tools/conf.d/resume
+sudo update-initramfs -u
+```
+
+[More info here](https://pop-planet.info/forums/threads/guide-to-hibernate-answer-is-a-guide.426/)
+
+### Boot
+DO NOT USE GRUB WITH POP OS
+
