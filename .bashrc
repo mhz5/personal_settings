@@ -18,7 +18,7 @@ export GOROOT="/usr/share/go"
 export GOBIN="$GOPATH/bin"
 
 # Food Delivery App paths
-export FDA_ROOT="$GOPATH/src/fda"
+export FDA_ROOT="$HOME/Projects/fda-backend"
 export FDA_WEB_ROOT="$HOME/Projects/fda-web"
 export FDA_DRIVER_ROOT="$HOME/Projects/fda-driver"
 # Android
