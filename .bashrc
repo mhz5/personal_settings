@@ -118,7 +118,7 @@ gcr() {
 #   / _/   / _ \| |/ /
 #  /___/  /_//_/|___/ 
 
-export GOOGLE_APPLICATION_CREDENTIALS="$FDA_ROOT/service-account-keys-food-prod-860896cd4e98.json"
+export GOOGLE_APPLICATION_CREDENTIALS="$FDA_ROOT/service-account-keys-food-prod.json"
 
 
 #    ____   __    __            
