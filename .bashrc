@@ -14,7 +14,7 @@ export PATH="$PATH:$APPLICATIONS_PATH/react-native-debugger"
 
 # Go paths
 export GOPATH="$HOME/go"
-export GOROOT="/usr/share/go"
+export GOROOT="/usr/local/go"
 export GOBIN="$GOPATH/bin"
 
 # Food Delivery App paths
