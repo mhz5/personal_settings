@@ -28,7 +28,9 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-export PATH="/usr/local/bin:$GOBIN:$GOROOT:$GOROOT/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
+#React Native Debugger
+export RN_DEBUGGER_PATH="/usr/local/react-native-debugger"
+export PATH="$RN_DEBUGGER_PATH:/usr/local/bin:$GOBIN:$GOROOT:$GOROOT/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 
 
 #     _  __               _                __    _            
@@ -120,15 +122,3 @@ gcr() {
 
 export GOOGLE_APPLICATION_CREDENTIALS="$FDA_ROOT/service-account-key-food-prod.json"
 
-
-#    ____   __    __            
-#   / __ \ / /_  / /  ___   ____
-#  / /_/ // __/ / _ \/ -_) / __/
-#  \____/ \__/ /_//_/\__/ /_/   
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/muke/applications/google-cloud-sdk/path.bash.inc' ]; then . '/home/muke/applications/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/muke/applications/google-cloud-sdk/completion.bash.inc' ]; then . '/home/muke/applications/google-cloud-sdk/completion.bash.inc'; fi
