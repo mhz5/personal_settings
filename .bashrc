@@ -30,7 +30,11 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 #React Native Debugger
 export RN_DEBUGGER_PATH="/usr/local/react-native-debugger"
-export PATH="$RN_DEBUGGER_PATH:/usr/local/bin:$GOBIN:$GOROOT:$GOROOT/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
+
+#Sublim Text
+export SUBLIME_TEXT_PATH="/usr/local/sublime_text_3"
+
+export PATH="$SUBLIME_TEXT_PATH:$RN_DEBUGGER_PATH:/usr/local/bin:$GOBIN:$GOROOT:$GOROOT/bin:$APPLICATIONS_PATH/WebStorm/bin:$PATH"
 
 
 #     _  __               _                __    _            
