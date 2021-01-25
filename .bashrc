@@ -121,5 +121,5 @@ gcr() {
 #   / _/   / _ \| |/ /
 #  /___/  /_//_/|___/ 
 
-export GOOGLE_APPLICATION_CREDENTIALS="$FDA_ROOT/service-account-key-food-prod.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/home/muke/Downloads/graphite-prism-302815-2b15803338fb.json"
 

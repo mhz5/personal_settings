@@ -2,7 +2,7 @@
 
 declare -A appmap
 appmap["- GoLand"]=goland
-appmap["Google Chrome"]="google-chrome-stable --ignore-certificate-errors"
+appmap["Google Chrome"]=google-chrome-stable
 appmap["- WebStorm"]=webstorm
 appmap["Terminal:"]=gnome-terminal
 
