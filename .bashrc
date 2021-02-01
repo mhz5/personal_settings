@@ -1,6 +1,8 @@
 export PERSONAL_SETTINGS_DIR="$HOME/personal_settings"
 # Source the default .bashrc provided by pop os.
 source $PERSONAL_SETTINGS_DIR/.bashrc_default
+# Read key bindings.
+bind -f ~/.inputrc
 
 # To generate large ASCII headers: http://patorjk.com/software/taag/#p=display&h=0&v=0&c=bash&f=Small%20Slant
 
