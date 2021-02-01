@@ -1,2 +1,3 @@
+# Control-Backspace deletes last word up to whitespace or delimiter (. : , ; " ' & / ( )).
 "\C-h": backward-kill-word
 
