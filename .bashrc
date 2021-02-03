@@ -13,6 +13,7 @@ bind -f $PERSONAL_SETTINGS_DIR/.inputrc
 
 export APPLICATIONS_PATH="$HOME/applications"
 export PATH="$PATH:$APPLICATIONS_PATH/react-native-debugger"
+export PYTHONPATH="${PYTHONPATH}:~/Projects/awning"
 
 # Go paths
 export GOPATH="$HOME/go"
